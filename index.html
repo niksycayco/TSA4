@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Wings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" onclick="toggleInfo()">Info</a> 
+    </div>
+
+    <div id="info" class="info">
+        <h2>Hi, I'm Chef Nikko.</h2>
+        <p>Choose your Favorite Flavor!</p>
+        <button onclick="closeInfo()">Close</button>
+    </div>
+
+    <div class="banner">WELCOME TO HUNGRY DINER!</div>
+
+    <div id="gallery" class="gallery">
+        <div class="container" onclick="openPopup('Korean Soy Garlic', 'A delicious mix of soy and garlic flavor. Is Soup soy sauce or guk-ganjang Korean. 국간장 is a type of Korean soy sauce ganjang made entirely of fermented soybeans meju and brine.', 'Korean Soy Garlic.jpg')">
+            <img src="Korean Soy Garlic.jpg" alt="Korean Soy Garlic">
+            <div class="description">Korean Soy Garlic</div>
+        </div>
+        <div class="container" onclick="openPopup('Buffalo Wings', 'Spicy and tangy buffalo wings, perfect for heat lovers! An American cuisine is an unbreaded chicken wing section that is generally deep-fried, then coated or dipped in a sauce', 'Buffalo Wings.jpg')">
+            <img src="Buffalo Wings.jpg" alt="Buffalo Wings">
+            <div class="description">Buffalo Wings</div>
+        </div>
+        <div class="container" onclick="openPopup('Garlic Parmesan', 'Savory garlic with parmesan cheese, a classic favorite. Its a savory, buttery, and mildly salty with a smooth and lusciously creamy texture. It has a pronounced garlic taste and a hint of tanginess from the Parmesan cheese with a kick of spice', 'Garlic Parmesan.jpg')">
+            <img src="Garlic Parmesan.jpg" alt="Garlic Parmesan">
+            <div class="description">Garlic Parmesan</div>
+        </div>
+        <div class="container" onclick="openPopup('Honey Butter', 'Sweet and buttery goodness for a delightful taste! Its savory, smoky, sticky, sweet, tender and so juicy.It is a type of curry made from chicken with a spiced tomato and butter makhan sauce.', 'Honey Butter.jpg')">
+            <img src="Honey Butter.jpg" alt="Honey Butter">
+            <div class="description">Honey Butter</div>
+        </div>
+    </div>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="popup-img" class="popup-img" src="" alt="">
+            <div class="popup-description">
+                <h2 id="popup-title"></h2>
+                <p id="popup-text"></p>
+                <button class="close" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
